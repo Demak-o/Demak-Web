@@ -1,1 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raid Cost Calculator • Rust Helper</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-inner">
+      <a class="brand" href="./index.html">Rust Helper</a>
+      <div class="navlinks">
+        <a href="./index.html">Home</a>
+        <a href="./rocket.html">Rocket</a>
+        <a class="active" href="./raid.html">Raid Cost</a>
+        <a href="./eco.html">Eco Raid</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Raid Cost Calculator</h1>
+    <p>Add rows for structures + quantities, then calculate. Output is split into “Resources” and “To craft”.</p>
+
+    <div class="card">
+      <div id="rows" class="stack"></div>
+
+      <div class="row">
+        <button id="add" class="btn">Add</button>
+        <button id="calc" class="btn primary">Calculate</button>
+        <button id="reset" class="btn">Reset</button>
+      </div>
+
+      <div class="split">
+        <div>
+          <h3 style="margin:0 0 10px">Resources</h3>
+          <pre id="resourcesOut" class="output"></pre>
+        </div>
+        <div>
+          <h3 style="margin:0 0 10px">To craft</h3>
+          <pre id="craftOut" class="output"></pre>
+        </div>
+      </div>
+
+      <div id="err" class="error" hidden></div>
+    </div>
+  </main>
+
+  <script src="./raid.js"></script>
+</body>
+</html>
 
