@@ -1,1 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rocket Calculator • Rust Helper</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-inner">
+      <a class="brand" href="./index.html">Rust Helper</a>
+      <div class="navlinks">
+        <a href="./index.html">Home</a>
+        <a class="active" href="./rocket.html">Rocket</a>
+        <a href="./raid.html">Raid Cost</a>
+        <a href="./eco.html">Eco Raid</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Rocket Calculator</h1>
+    <p>Matches your Python logic (Sulfur required accounts for sulfur you already have and gunpowder conversion).</p>
+
+    <div class="card">
+      <div class="grid">
+        <label>
+          <span>How many rockets do you want</span>
+          <input id="Entry1" type="number" min="0" step="1" placeholder="e.g. 4">
+        </label>
+
+        <label>
+          <span>How much sulfur do you have</span>
+          <input id="Entry2" type="number" min="0" step="1" placeholder="e.g. 2000">
+        </label>
+
+        <label>
+          <span>How much gunpowder do you have</span>
+          <input id="Entry3" type="number" min="0" step="1" placeholder="e.g. 100">
+        </label>
+      </div>
+
+      <div class="row">
+        <button id="calc" class="btn primary">Calculate</button>
+        <button id="reset" class="btn">Reset</button>
+      </div>
+
+      <div class="results">
+        <div id="fs">Sulfur Required:</div>
+        <div id="ch">Charcoal:</div>
+        <div id="mp">Metal Pipes:</div>
+        <div id="lg">Low Grade:</div>
+        <div id="mf">Metal Frags:</div>
+        <div id="err" class="error" hidden></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./rocket.js"></script>
+</body>
+</html>
 
