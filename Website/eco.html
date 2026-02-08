@@ -1,1 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eco Raid Calculator • Rust Helper</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-inner">
+      <a class="brand" href="./index.html">Rust Helper</a>
+      <div class="navlinks">
+        <a href="./index.html">Home</a>
+        <a href="./rocket.html">Rocket</a>
+        <a href="./raid.html">Raid Cost</a>
+        <a class="active" href="./eco.html">Eco Raid</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Eco Raid Calculator</h1>
+    <p>Select a structure and a tool, then calculate crafting resources required for the tools.</p>
+
+    <div class="card">
+      <div class="grid">
+        <label>
+          <span>Structure</span>
+          <select id="structure"></select>
+        </label>
+
+        <label>
+          <span>Tool</span>
+          <select id="tool"></select>
+        </label>
+
+        <div></div>
+      </div>
+
+      <div class="row">
+        <button id="calc" class="btn primary">Calculate Resources</button>
+      </div>
+
+      <pre id="out" class="output" style="margin-top:14px"></pre>
+      <div id="err" class="error" hidden></div>
+    </div>
+  </main>
+
+  <script src="./eco.js"></script>
+</body>
+</html>
 
