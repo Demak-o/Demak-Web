@@ -245,3 +245,28 @@ pre.output{
   background: rgba(139,30,30,.45);
   color: var(--text);
 }
+
+.hero-image{
+  width:100%;
+  max-width:900px;
+  border-radius:20px;
+  border:1px solid var(--border);
+  box-shadow:
+    0 30px 80px rgba(0,0,0,.55),
+    inset 0 0 0 1px rgba(255,255,255,.04);
+}
+
+.hero-image{
+  animation: fadeInUp .8s ease-out both;
+}
+
+@keyframes fadeInUp{
+  from{
+    opacity:0;
+    transform: translateY(12px);
+  }
+  to{
+    opacity:1;
+    transform:none;
+  }
+}
