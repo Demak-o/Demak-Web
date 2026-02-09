@@ -271,3 +271,9 @@ pre.output{
     transform:none;
   }
 }
+
+body.home{
+  background:
+    linear-gradient(rgba(20,6,6,.85), rgba(20,6,6,.85)),
+    url("./webrust.jpeg") center / cover no-repeat fixed;
+}
